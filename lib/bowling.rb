@@ -44,9 +44,9 @@ class Bowling
     
     def calc_spare_bounus(index)
        if @scores[index]
-           @scores[index].first
+           @scores[index].first || 0
        else
-           @temp.first
+           @temp.first || 0
        end
     end
 end
